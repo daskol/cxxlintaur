@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.11)
 
 project(c++lintaur VERSION 0.0.0 LANGUAGES CXX)
 
@@ -11,15 +11,6 @@ message(STATUS "LLVM include dir is ${LLVM_INCLUDE_DIR}")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CXXSOURCES name-checker.cc)
 set(EXAMPLES example.cc)
-
-include_directories(/usr/include)
-include_directories(/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include)
-include_directories(/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1)
-
-# Including include directories that for limits.h and stddef.h.
-#include_directories(/usr/lib/clang/6.0.0/include)
-#include_directories(/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/install-tools/include)
-include_directories(/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed)
 
 include_directories(${LLVM_INCLUDE_DIRS})
 link_directories(${LLVM_LIBRARY_DIRS})
