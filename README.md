@@ -4,16 +4,18 @@
 
 ## Overview
 
-This is another one toy tool based on inimitable [LLVM](/llvm-mirror/llvm) and
-[CLang](/llvm-mirror/clang). In my project RecursiveASTVisitor is implemented.
-It walks through AST and looking for name declarations(which are represented
-with classes NameDecl, TypeDecl, FunctionDecl, etc). When linter meets an AST
-node of the type, it checks name of the Node for compliance to
+This is another one toy tool based on inimitable
+[LLVM](https://github.com/llvm-mirror/llvm) and
+[CLang](https://github.com/llvm-mirror/clang). In my project
+RecursiveASTVisitor is implemented.  It walks through AST and looking for name
+declarations(which are represented with classes NameDecl, TypeDecl,
+FunctionDecl, etc). When linter meets an AST node of the type, it checks name
+of the Node for compliance to
 [Google Style Guide](https://google.github.io/styleguide/cppguide.html#Naming).
 Surely, this tools does not support that convention completely. In order to
 lint everething and to refactor whatever, one should look at
 [clang-tidy](http://clang.llvm.org/extra/clang-tidy/) and
-[clang-format](/llvm-mirror/clang/tree/master/tools/clang-format).
+[clang-format](https://github.com/llvm-mirror/clang/tree/master/tools/clang-format).
 
 Let's build the project. Run the following.
 
